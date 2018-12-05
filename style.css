@@ -39,6 +39,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: white;
+  cursor:url(images/zoutstrooier.png), pointer;
 }
 a:hover{
   opacity: 1;
@@ -55,8 +56,8 @@ img{
   width: 100%;
   opacity: 0;
   transition: .5s;
-  pointer-events: none;
   user-select: none;
+  cursor:url(images/zoutstrooier.png), auto;
 }
 .border{
   transform-origin: left;
@@ -69,4 +70,13 @@ img{
 }
 .visible{
   opacity: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav.flexel{
+      flex-direction: column;
+    }
+    nav.flexel li{
+      margin: 10px;
+    }
 }
