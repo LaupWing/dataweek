@@ -54,6 +54,8 @@ img{
   width: 100%;
   opacity: 0;
   transition: .5s;
+  pointer-events: none;
+  user-select: none;
 }
 .border{
   transform-origin: left;
