@@ -1,7 +1,10 @@
 const navItems = document.querySelectorAll("li");
 const navLinks = document.querySelectorAll("a");
 const videos = document.querySelectorAll("video");
-document.querySelector(".start").play();
+setTimeout(function(){
+
+  document.querySelector(".start").play();
+}, 100)
 navItems.forEach(function(item){
   item.addEventListener("mouseover", showBorder);
 });
