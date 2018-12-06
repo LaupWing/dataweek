@@ -1,6 +1,6 @@
 const navItems = document.querySelectorAll("li");
 const navLinks = document.querySelectorAll("a");
-const imgs = document.querySelectorAll("img");
+const videos = document.querySelectorAll("video");
 
 navItems.forEach(function(item){
   item.addEventListener("mouseover", showBorder);
@@ -22,14 +22,15 @@ function hideBorder(){
 
 function handleClick(e){
   e.preventDefault();
+  document.querySelector(".start").style.display = "none"
   const clickedClass = this.className
 
   console.log(this.className)
-  imgs.forEach(function(img){
-    img.classList.remove("visible")
-    if(clickedClass === img.className){
-      img.classList.add("visible")
-      console.log(img)
+  videos.forEach(function(video){
+    video.classList.remove("visible")
+    if(clickedClass === video.className){
+      video.classList.add("visible")
+      video.play()
     }
   })
 }

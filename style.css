@@ -11,12 +11,14 @@ html {
   flex-direction: column;
 }
 body.flexel{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
   justify-content:flex-start;
   padding-top: 50px;
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: rgba(0,0,0,0.9);
+  background: #414269;
 }
 
 main{
@@ -25,6 +27,7 @@ main{
   /* background: orange; */
 }
 header{
+  margin-top: 20px;
   width: 100%;
 }
 nav.flexel{
@@ -35,7 +38,7 @@ nav.flexel{
 
 a{
   transition: .25s;
-  opacity: .4;
+  opacity: .2;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: white;
@@ -46,18 +49,21 @@ a:hover{
   transform: scale(1.1);
 }
 section{
-  width: 50%;
+  width: 80%;
   min-width: 300px;
   margin: 10%;
   position: relative;
 }
-img{
+video{
   position: absolute;
   width: 100%;
   opacity: 0;
   transition: .5s;
   user-select: none;
   cursor:url(images/zoutstrooier.png), auto;
+}
+.start{
+  opacity: 1;
 }
 .border{
   transform-origin: left;
