@@ -68,7 +68,7 @@ video{
   position: absolute;
   width: 100%;
   opacity: 0;
-  transition: .5s;
+  transition: 1.5s;
   user-select: none;
   cursor:url(images/zoutstrooier.png), auto;
 }
