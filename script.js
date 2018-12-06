@@ -1,7 +1,7 @@
 const navItems = document.querySelectorAll("li");
 const navLinks = document.querySelectorAll("a");
 const videos = document.querySelectorAll("video");
-
+document.querySelector(".start").play();
 navItems.forEach(function(item){
   item.addEventListener("mouseover", showBorder);
 });
@@ -28,6 +28,8 @@ function handleClick(e){
   console.log(this.className)
   videos.forEach(function(video){
     video.classList.remove("visible")
+    video.pause();
+    video.currentTime = 0;
     if(clickedClass === video.className){
       video.classList.add("visible")
       video.play()
