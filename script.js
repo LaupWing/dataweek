@@ -44,17 +44,10 @@ function handleClick(e) {
 
       video.classList.add("visible");
       video.play();
+      video.loop = true;
     }
   })
 
-  // setTimeout(function(){
-  //   videos.forEach(function(video){
-  //     if (clickedClass === video.className) {
-  //       video.classList.add("visible")
-  //       video.play()
-  //     }
-  //   })
-  // },250)
 }
 
 function handleButtonClick() {
@@ -103,8 +96,14 @@ function handleButtonClick2() {
     video.currentTime = 0;
     video.loop = true;
     video.play();
+    video.addEventListener("mouseover", showMoreInfo)
   })
 };
+
+function showMoreInfo(){
+  
+}
+
 
 function stopLooping(){
   videos.forEach(function(video){
