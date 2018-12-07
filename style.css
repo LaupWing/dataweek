@@ -108,6 +108,7 @@ video{
 .adjustVideo{
   width: 400px;
   position: relative;
+  margin: 10px;
 }
 
 
